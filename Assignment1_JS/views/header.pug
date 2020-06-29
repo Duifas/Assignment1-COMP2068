@@ -1,0 +1,30 @@
+﻿doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+  body
+    header
+        table
+            tr
+                th
+                    a(href='/')
+                        |Home
+            tr
+                th
+                    a(href='/about')
+                        |About
+            tr
+                th
+                    a(href='/services')
+                        |Services
+            tr
+                th
+                    a(href='/projects')
+                        |Projects
+            tr
+                th
+                    a(href='/contact')
+                        |Contact
+
+    block content
