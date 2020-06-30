@@ -43,6 +43,9 @@
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
     <Content Include="views\contact.pug" />
+    <Content Include="views\partials\footer.pug">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\services.pug" />
     <Content Include="views\projects.pug" />
     <Content Include="views\about.pug">

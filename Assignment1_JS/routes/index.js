@@ -1,6 +1,7 @@
 ﻿'use strict';
 var express = require('express');
 var router = express.Router();
+var articlesModel = require('../model/contactMessage');
 
 /* GET home page. */
 router.get('/', function (req, res) {

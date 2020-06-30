@@ -5,7 +5,7 @@ block content
   br
   h2 Would you like to contact me? Send me a message with your name and email to let me know.
   div(id="divideContact")
-   form(id="formContact" method='POST' action='/contact')
+   form(id='formContact' method='POST' action='/contact')
         div
             h3 Name
             input(type='text' name='name')
@@ -14,6 +14,8 @@ block content
             input(type='email' name='email')
         div
             h3 Description
-            textarea(name='description' rows='8' cols='80')
+            input(type='text' name='description')
         div
-            button(type='submit' value='Submit') Submit
+            button(id='subContact' type='submit' value='Submit') Submit
+
+  include partials/footer
