@@ -2,19 +2,18 @@
 
 block content
   h1= title
-  br
   h2 Would you like to contact me? Send me a message with your name and email to let me know.
   div(id="divideContact")
    form(id='formContact' method='POST' action='/contact')
         div
-            h3 Name
+            h3 Name:
             input(type='text' name='name')
         div
-            h3 Email
+            h3 Email:
             input(type='email' name='email')
         div
-            h3 Description
-            input(type='text' name='description')
+            h3 Description:
+            input(id="descriptionField" type='text' name='description')
         div
             button(id='subContact' type='submit' value='Submit') Submit
 

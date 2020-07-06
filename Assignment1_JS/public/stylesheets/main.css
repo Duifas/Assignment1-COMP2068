@@ -1,6 +1,14 @@
-﻿body {
-    padding: 50px;
+﻿html {
+    background-color: black;
+}
+
+body {
+    padding: 20px 20px 5px 20px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color:white;
+    text-align:center;
+    width: 90%;
+    margin:auto;
 }
 
 a {
@@ -8,4 +16,63 @@ a {
 }
 textarea {
     resize: none;
+}
+
+footer {
+    padding: 0px;
+    width: 100%;
+    background-color: grey;
+}
+table, th {
+    border: 1.5px solid blue;
+    padding: 0px;
+    margin: 0px;
+    border-spacing:0;
+    font-size: 20px;
+}
+
+table {
+    width:100%;
+}
+
+a {
+    padding: 2px 5px 2px 5px;
+    text-decoration:none;
+}
+
+#footerP {
+    margin:10px 0 0 0;
+    padding:2px;
+    color:white;
+}
+.firstTable:hover, .firstTable:hover a {
+    background-color: blue;
+    color:white
+}
+
+form {
+    border: 1px solid black;
+    padding: 3px;
+    padding-bottom:10px;
+}
+
+#descriptionField {
+    width:60%;
+    height: 70%;
+}
+input {
+    width: 30%;
+}
+
+p {
+    font-size:15px;
+}
+
+ol {
+    padding: 0;
+}
+
+ol li {
+    list-style-position: inside;
+     font-size: 15px;
 }
