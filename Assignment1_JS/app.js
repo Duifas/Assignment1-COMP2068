@@ -1,4 +1,12 @@
-﻿'use strict';
+﻿/*
+ * Name: Thales Barros Fajardo Valente
+ * Student ID: 200400698
+ * Date: 07/06/2020
+ * 
+ * Description: List of back-end function on the webpages
+ */
+
+'use strict';
 var debug = require('debug');
 var express = require('express');
 var path = require('path');
@@ -7,10 +15,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-
+//Addition of Mongo client for connection of database
 const MongoClient = require('mongodb').MongoClient;
+//require the mongoose variable to initiate mongoose
 var mongoose = require('mongoose');
+//set of characters to connect to the database with admin and password
 const uri = "mongodb+srv://admin:Thalesfv00@cluster0-vqo7y.mongodb.net/ContactMessage?retryWrites=true&w=majority";
+//try to connect, if not display error
 try {    mongoose.connect(uri, { useNewUrlParser: true });    var db = mongoose.connection;    db.on('error', function (err) {        console.log(err);    });    db.once('open', function (callback) {        console.log('Connected to MongoDB');    });} catch (err) {    console.log("Error : " + err);}
 
 

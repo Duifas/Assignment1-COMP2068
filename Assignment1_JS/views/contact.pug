@@ -1,10 +1,20 @@
-﻿extends partials/header
+﻿//*
+ * Name: Thales Barros Fajardo Valente
+ * Student ID: 200400698
+ * Date: 07/06/2020
+ * 
+ * Description: Contact page where you can fill a form to contact me and display a thank you page
+ */
+
+extends partials/header
 
 block content
   h1= title
   h2 Would you like to contact me? Send me a message with your name and email to let me know.
   div(id="divideContact")
+   //Creation of the form 
    form(id='formContact' method='POST' action='/contact')
+        //Separation of the inputs by div tags
         div
             h3 Name:
             input(type='text' name='name')
@@ -14,6 +24,7 @@ block content
         div
             h3 Description:
             input(id="descriptionField" type='text' name='description')
+        //Button to send the information from the form to the database
         div
             button(id='subContact' type='submit' value='Submit') Submit
 
